@@ -1,0 +1,31 @@
+{
+    "apiVersion": 2,
+    "name": "my-plugin/photos-slider",
+    "title": "Sekcja - slider zdjęć",
+    "category": "category",
+    "description": "Sekcja z galerią zdjęć",
+    "supports": {
+        "html": false
+    },
+    "attributes": {
+        "tag": {
+            "type": "string",
+            "default": "h2"
+        },
+        "heading": {
+            "type": "string",
+            "default": ""
+        },
+        "content": {
+            "type": "string",
+            "default": ""
+        },
+        "images": {
+            "type": "array",
+            "default": []
+        }
+    },
+    "editorScript": "file:./build/index.js",
+    "editorStyle": "file:./photos-slider-editor.css",
+    "render": "file:./render.php"
+}
